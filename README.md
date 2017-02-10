@@ -14,6 +14,6 @@ google api Geolocation을 이용하여 페이지 접속자의 위치를 받아�
 
 ## P.S
 테스트를 원하는 분은 WAMP stack만을 설치하여 바로 localhost 실행시키시면 됩니다.
-기존에 사용하시던 MySQL이 있는 분은, 포트 재설정만 해주시면 됩니다.
 
 ## Image
+![homepage](./images/1.png)
