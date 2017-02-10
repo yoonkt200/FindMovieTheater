@@ -1,0 +1,43 @@
+body{
+	color: #888;
+}
+
+body,
+.home-block-heading span,
+.page-heading span{
+	background: #ebebe8;
+}
+
+body a{ color: #444; }
+
+body a:hover,
+#top-widget-holder a:hover,
+#nav>li>a:hover,
+.project-heading .launch:hover{
+	color: #FF8000;
+}
+
+h1,h2,h3,h4,h5,h6{ color: #444444; }
+
+
+/* HEADER ------------------------------------------------------------*/
+
+header{ background: #444 url(../img/header.png) bottom left repeat-x; }
+
+
+
+/* NAVIGATION ------------------------------------------------------------*/
+
+nav a{ color: #E2E0D7; }
+
+#nav>li.current-menu-item>a,
+#nav>li.current_page_item>a{
+	color: #FF8000;
+}
+
+
+/* FOOTER ------------------------------------------------------------*/
+
+.footer-bottom{
+	border-top: 1px solid #ccc;
+}

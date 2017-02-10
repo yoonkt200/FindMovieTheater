@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Finding Theater</title>
+
+		<link rel="stylesheet" media="all" href="../css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<link rel="stylesheet" media="screen" href="../css/superfish.css" /> 
+		<link rel="stylesheet" media="all" href="../css/skin.css"/>
+	</head>
+	
+	<body>
+		<header class="clearfix">		
+			<div class="wrapper clearfix">
+				<a href="../php/main.php" id="logo"><img src="../img/logo.png" alt="Finding Theater"></a>
+				<nav>
+					<ul id="nav" class="sf-menu">
+						<li><a href="../php/main.php">HOME</a></li>
+						<li><a href="../php/map.php">MAP</a></li>
+						<li><a href="../php/theater.php">THEATER</a></li>
+						<li class="current-menu-item"><a href="about.html">ABOUT</a></li>
+					</ul>
+					<div id="combo-holder"></div>
+				</nav>
+			</div>
+		</header>
+		
+		<!-- MAIN -->
+		<div id="main">	
+			<div class="wrapper">
+				<!-- home-block -->
+	        	<div class="home-block" >
+	        		<h2 class="home-block-heading"><span>프로젝트 설명</span></h2>
+	        		<div class="one-third-thumbs clearfix" >
+
+	        			<h1 style="font-size:20px; font-weight: bold">프로젝트 목표</h1><br><br>
+	        			<p>client의 현재 위치를 기반으로 반경 7km 이내의 영화관 정보를 제공하는 서비스 구현</p><br><br>
+
+	        			<h1 style="font-size:20px; font-weight: bold">개발 환경&언어</h1><br><br>
+	        			<p>개발 환경 : WAMP stack (Windows + Apache + MySQL + PHP)</p>
+	        			<p>개발 언어 : Html5, JavaScript, PHP, R</p>
+	        			<p>서드파티 라이브러리 : Geolocation Google API, R script packages, Leaflet, DataTable</p>
+	        			<p>기타 : CGV 공식 홈페이지의 영화관 정보를 scraping하여 각종 정보를 refine한 뒤, database 구축</p><br><br>
+
+	        			<h1 style="font-size:20px; font-weight: bold">구현 내용</h1><br><br>
+	        			<p>[1] 위치기반정보, cookie & session<br><br>geolocation과 브라우저의 cookie를 이용하여 클라이언트의 위치정보를 받아옴. 위치정보는 session에 저장.</p><br><br>
+	        			<p>[2] session & DB 를 이용한 거리계산 알고리즘<br><br>session에 저장된 위도 및 경도 정보를 이용하여 database에 있는 영화관 정보를 기반으로 7km 이내의 영화관 정보가 들어있는 data를 session으로 관리. 위도 및 경도정보를 이용하여 km 단위로 거리를 측정하는 알고리즘을 사용.</p><br><br>
+	        			<p>[3] Home tab - web data scraping<br><br><a href="../php/main.php" style="color:#FF8000;">HOME</a> 에서는 <a href="http://movie.daum.net/main/new">http://movie.daum.net/main/new</a> 의 예매순위를 scraping한 json 데이터와 이미지를 읽어서 보여줌</p><br><br>
+	        			<p>[4] Map tab - location visualizing by session & DB<br><br><a href="../php/map.php" style="color:#FF8000;">MAP</a> 에서는 7km 이내의 영화관들의 위도경도 정보를 이용하여 서드파티 라이브러리인 Leaflet을 이용하여 visualizing 하였음.</p><br><br>
+	        			<p>[5] Theater tab - data search & sort<br><br><a href="../php/theater.php" style="color:#FF8000;">THEATER</a> 에서는 영화관 정보를 scraping 한 json 파일중에서 7km 이내의 영화관의 정보만을 이용하여 search와 sort가 가능한 table 형식으로 보여줌.</p><br><br>
+	        			<p>[6] Data scraping algorithm<br><br>3번과 5번에서 사용하는 json data는, R script를 이용하여 영화관 홈페이지의 정보를 scraping 한 뒤 json file로 encoding하여 서버의 directory 폴더에 저장하는 파일이다. 영화관 정보를 실시간으로 제공해야 하기 때문에 json파일은 스케줄러를 이용하여 업데이트 하여야 하지만, 본 프로젝트에서는 개인 PC로 개발을 진행하였기 때문에 R scheduler를 제대로 가동할 수 없는 환경이었으므로, json file을 업데이트 하는것은 수동으로 진행하였다.</p><br><br>
+
+	        			<h1 style="font-size:20px; font-weight: bold">개선 방향</h1><br><br>
+	        			<p>[1]<br><br>시간 관계상 CGV영화관 페이지를 scraping하는 logic만을 만들었지만, 추후에 Megabox나 Lottecinema 등의 페이지를 scraping하는 logic을 추가한다.</p>
+	        			<p>[2]<br><br>만약 관리가 용이하고 24시간 서버 역할이 가능한 서버를 구축한다면, 실시간 json 데이터를 업데이트 하기위해 R script를 이용해 실시간 json 데이터를 뽑아내는 등의 데이터 환경 구축을 스케줄러로 관리할 수 있을 것이다.</p>
+	        			<br><br>
+
+	        		</div>
+	        	</div>
+	        	<!-- home-block -->
+			</div>
+		</div>
+		<!-- MAIN -->
+
+		<footer>
+			<div class="wrapper">				
+				<div class="footer-bottom">
+					<div class="left">Created by | Yoon Ki Tae
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

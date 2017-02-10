@@ -1,0 +1,108 @@
+body{
+	margin:0px;
+	background-image: url(../img/background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 150%;
+}
+
+/* CONTAINER ------------------------------------------------------------*/
+
+
+.container{
+	padding-top: 150px;
+	width: 800px;
+	height: 500px;
+	display: table;
+	margin: 0px auto;
+}
+
+
+.aligned-container{
+	display: table-cell;
+	text-align: center;
+}
+
+
+.banner{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+#banner-title{
+	color: #FF8000;
+	font-family: Helvetica, "Nanum Gothic", sans-serif;
+	font-size: 70px;
+	font-weight: 800;
+
+}
+
+
+.introduction{
+	padding-top: 30px;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-bottom: 50px;
+}
+
+
+#app-introduction{
+	text-align: left;
+	color: white;
+	font-family: "Nanum Gothic", Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+
+.start-button{
+	height: 80px;
+	width: 700px;
+	font-family: Helvetica, "Nanum Gothic", sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+ 	background-color: transparent;
+ 	color: #FF8000;
+ 	border: 2px solid;
+ 	border-radius: 15px;
+  
+ 	transition: .2s ease;
+}
+
+
+.start-button:hover{
+	background-color: #FF8000;
+    color: white;
+    border-style: hidden;
+    
+    transition: .2s ease;
+}
+
+.get-button{
+	height: 80px;
+	width: 700px;
+	font-family: Helvetica, "Nanum Gothic", sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+ 	background-color: transparent;
+ 	color: #FF8000;
+ 	border: 2px solid;
+ 	border-radius: 15px;
+  
+ 	transition: .2s ease;
+}
+
+
+.get-button:hover{
+	background-color: #FF8000;
+    color: white;
+    border-style: hidden;
+    
+    transition: .2s ease;
+}
