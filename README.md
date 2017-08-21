@@ -15,6 +15,10 @@ google api Geolocation을 이용하여 페이지 접속자의 위치를 받아�
 ## P.S
 테스트를 원하는 분은 WAMP stack만을 설치하여 바로 localhost 실행시키시면 됩니다.
 
+## Demo Video
+
+https://www.youtube.com/watch?v=TgoH--bpIOM&feature=youtu.be
+
 ## Image
 시작 화면
 ![homepage](https://github.com/yoonkt200/FindMovieTheater/blob/master/images/1.PNG)
