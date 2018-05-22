@@ -14,7 +14,7 @@ google api Geolocation을 이용하여 페이지 접속자의 위치를 받아�
 
 ## Getting Started  ( for developers )
 
-#### 1. Install node.js
+#### WAMP stack
 
 Install WAMP stack (Windows + Apache + MySQL + PHP)
 
