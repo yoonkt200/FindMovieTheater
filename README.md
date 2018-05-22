@@ -1,5 +1,5 @@
 ## Find movie theater
-- web appication project in ajou university.
+- web appication project in ajou university. (2015)
 - real time web crawling using Rscript, web applicatoin using PHP + SQL
 
 ## Using
